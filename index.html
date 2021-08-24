@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                margin:0;
+                font-size: 14px;
+                font-family: arial, sans-serif;
+            }
+            
+            #topnav{
+                display: flex;
+                justify-content: flex-end;
+                padding-top: 20px;
+                vertical-align: middle;
+                padding-left: 20px;
+                padding-right: 20px;
+                max-height: 181px;
+            }
+
+            .toplink {
+                padding-right: 15px;
+            }
+
+            #middle {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+
+            #form{
+                text-align: center;
+            }
+
+            /*input[type=text]{
+                margin:0 auto;
+                border-radius:30px;
+                border:1px solid #dcdcdc;
+                margin-bottom: 10px;
+                left: 50%;
+                transform: translate(-22%, -0%);
+
+            }
+
+            .searchbar{
+                height:34px;
+                width: 234px;
+                border:none;
+                font-size:16px;
+                outline: none;
+                padding-left: 20px;
+                padding-right: 20px;
+            }*/
+
+            .searchbar{
+                background: #fff;
+                display: flex;
+                margin-right: auto;
+                margin-left: auto;
+                border: 1px solid #dfe1e5;
+                box-shadow: none;
+                border-radius: 24px;
+                z-index: 3;
+                height: 44px;
+                margin: 0 auto;
+                width:582px ;
+                width: auto;
+            }
+
+            .searchbarint{
+                flex: 1;
+                display: flex;
+                padding: 5px 8px 0 16px;
+                padding-left: 14px;
+            }
+
+            input[type=text]{
+                background-color: transparent;
+                border: none;
+                margin: 0;
+                padding: 0;
+                color: rgba(0,0,0,.87);
+                word-wrap: break-word;
+                outline: none;
+                display: flex;
+                flex: 100%;
+                -webkit-tap-highlight-color: transparent;
+                height: 28px;
+                font-size: 16px;
+            }
+
+            .loupe{
+                display: flex;
+                align-items: center;
+                padding-right: 13px;
+            }
+
+            .loupe.int{
+                display: block;
+                margin-top: 3px;
+                color: #9aa0a6;
+                height: 20px;
+                width: 20px;
+            }
+
+            .searchbar:hover{
+                box-shadow: 1px 1px 8px 1px #dcdcdc;
+            }
+
+            #logo{
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                padding-bottom: 28px;
+            }
+
+            .input{
+                display: block;
+                flex: 1;
+                flex-wrap: wrap;
+                color: transparent;
+                flex: 100%;
+                height: 34px;
+                min-width: 337px;
+                padding-right: 12pxn;
+            }
+
+            .button{
+                display: table-cell;
+                padding-top: 18px;
+                top: 53px;
+                width: 484px;
+                height: 70px;
+            }
+
+            .submit{
+                background-color: #f2f2f2;
+                border: 1px solid #f2f2f2;
+                border-radius: 4px;
+                color: #5F6368;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+        </style>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Search</title>
+        <!-- <link href ="style.css" rel="stylesheet">-->
+    </head>
+    <body>
+        <div id="topnav">
+            <a href="index-image.html" class="toplink">Images</a>
+            <a href="advandced-search.html" class="toplink">Advanced</a>
+        </div>
+        <div id = "middle">
+            <img id="logo" src="googlelogo_color_272x92dp.png" height="94" width="275">
+            <div>
+            <form id="form" action="https://google.com/search">
+                <div class="searchbar">
+                    <div class="searchbarint">
+                        <div class="loupe">
+                            <span class="loupe.int"><img src="a6ec6a445f607c21a68b15bb07b2b25c.jpg" height="20px" width= "20px";> </span>
+                        </div>
+                        <div class= "input">
+                            <input type="text" name="q">
+                        </div>
+                    </div>
+                </div>
+                <!--<input type = "text" name= "q" class="searchbar">
+                    <div class="searchbar.int"></div>
+                        <div class="loupe">
+                            <span class="loupe.int"><img src="a6ec6a445f607c21a68b15bb07b2b25c.jpg" height="20px" width= "20px";> </span>
+                        </div>
+                </div>-->
+                <div class="button">
+                    <input class="submit" type="submit" value="Google Search">
+                    <input class="submit" type="submit" name="btnI" value="Feeling Lucky">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

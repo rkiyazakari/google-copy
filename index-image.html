@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                margin:0;
+            }
+            
+            #topnav{
+                display: flex;
+                justify-content: flex-end;
+                margin-top: px;
+            }
+
+            #topnav a {
+                margin-right: 20px;
+            }
+
+            #middle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            #form{
+                text-align: center;
+            }
+
+            input[type=text]{
+                margin: auto;
+                width: 175%;
+                border-radius:30px;
+                border:1px solid #dcdcdc;
+                margin-bottom: 10px;
+                left: 50%;
+                transform: translate(-22%, -0%);
+            }
+
+            .searchbar{
+                height:40px;
+                border:none;
+                font-size:16px;
+                outline: none;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .searchbar:hover{
+                box-shadow: 1px 1px 8px 1px #dcdcdc;
+            }
+
+            #logo{
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+        </style>
+
+        <title>Search</title>
+        <!-- <link href ="style.css" rel="stylesheet">-->
+    </head>
+    <body>
+        <div id="topnav">
+            <a href="index.html" class="toplink">Search</a>
+            <a href="Advanced.html" class="toplink">Advanced</a>
+        </div>
+        <div id ="middle">
+            <img id="logo" src="1200px-Google_Images_2015_logo.svg.png" width="320px">
+            <form id="form" action="https://google.com/images">
+                <input class="searchbar" type="text" name="q">
+                <input type="submit" value="Google Search">
+                <input type="button" value="Feeling Lucky">
+            </form>
+        </div>
+    </body>
+</html>
